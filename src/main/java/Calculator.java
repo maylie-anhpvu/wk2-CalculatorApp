@@ -9,6 +9,7 @@ public class Calculator {
 
     public Calculator() {
         setCalcFrame();
+        addButtons();
     }
 
     public void setCalcFrame() {
@@ -24,11 +25,12 @@ public class Calculator {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public void addButtons() {
+    public void addButtons() { //TODO button not showing
         JPanel panel = new JPanel();
         for (String numStr : NUMBERS) {
             JButton button = new JButton(numStr);
             button.setFont(FONT_ARIAL);
+            button.setBackground(Color.WHITE);
             panel.add(button);
         }
         frame.add(panel);

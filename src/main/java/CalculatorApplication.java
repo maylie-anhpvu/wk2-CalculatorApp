@@ -3,5 +3,4 @@ public class CalculatorApplication {
         new Calculator();
     }
 
-    // issue: Not able to show buttons
 }
